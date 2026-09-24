@@ -22,7 +22,7 @@ export default function HomePage() {
         text: "Unsere Leistungen",
         href: "#services",
       }}
-      imageSrc="http://img.b2bpic.net/free-photo/spoiler-red-sports-car-white-room_181624-27183.jpg"
+      imageSrc="https://storage.googleapis.com/webild/users/user_3JmMNFbajJzdaQaLpSwfgd9i6cl/tmp/ultra-realistic-premium-black-sports-car-1790274781749-272a641d.jpg"
       textAnimation="fade-blur"
     />
     </SectionErrorBoundary>
