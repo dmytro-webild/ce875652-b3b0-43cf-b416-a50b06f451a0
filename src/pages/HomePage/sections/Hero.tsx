@@ -13,11 +13,11 @@ export default function HeroSection(): React.JSX.Element {
           brand="NIVWERK"
           description="mehr als nur sauber"
           primaryButton={{
-            text: "Termin vereinbaren",
+            text: "TERMIN BUCHEN",
             href: "#contact",
           }}
           secondaryButton={{
-            text: "Unsere Leistungen",
+            text: "UNSERE LEISTUNGEN",
             href: "#services",
           }}
           imageSrc="https://storage.googleapis.com/webild/users/user_3JmMNFbajJzdaQaLpSwfgd9i6cl/tmp/ultra-realistic-premium-black-sports-car-1790274781749-272a641d.jpg"
