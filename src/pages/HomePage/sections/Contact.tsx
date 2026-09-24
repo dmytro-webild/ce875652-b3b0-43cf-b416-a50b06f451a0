@@ -13,7 +13,7 @@ export default function ContactSection(): React.JSX.Element {
           tag="Kontakt"
           text="Bereit für das Upgrade Ihres Fahrzeugs? Vereinbaren Sie noch heute einen Termin."
           primaryButton={{
-            text: "Jetzt anfragen",
+            text: "TERMIN BUCHEN",
             href: "mailto:info@nivwerk.ch",
           }}
           secondaryButton={{
