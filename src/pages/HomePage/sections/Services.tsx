@@ -21,7 +21,7 @@ const items = [
     description: "Schonende Handwäsche, Lackkorrektur und Veredelung für makellosen Tiefenglanz.",
     buttonIcon: "ArrowRight",
     buttonHref: "#contact",
-    imageSrc: "https://picsum.photos/seed/1172429180/1200/800"
+    imageSrc: "https://storage.googleapis.com/webild/users/user_3JmMNFbajJzdaQaLpSwfgd9i6cl/tmp/ultra-realistic-premium-black-car-receiv-1791227680462-b4a2dbcd.png"
   },
   {
     title: "Komplettreinigung",
