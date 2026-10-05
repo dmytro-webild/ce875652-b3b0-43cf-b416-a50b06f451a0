@@ -1,7 +1,7 @@
 /* eslint-disable */
 // @ts-nocheck
 import { useState } from "react";
-import { Check, ChevronRight, ChevronLeft, CheckCircle2, Sparkles } from "lucide-react";
+import { Check, ChevronRight, ChevronLeft, CheckCircle2, Sparkles, MapPin } from "lucide-react";
 import ScrollReveal from "@/components/ui/ScrollReveal";
 
 const SERVICES = [
@@ -27,19 +27,21 @@ const ContactInline = () => {
   const [vehicleModel, setVehicleModel] = useState("");
   const [selectedDate, setSelectedDate] = useState("");
   const [selectedTime, setSelectedTime] = useState(TIME_SLOTS[0]);
+  const [location, setLocation] = useState({ strasse: "", plz: "", ort: "" });
   const [formData, setFormData] = useState({ name: "", email: "", phone: "", notes: "" });
   const [isSubmitted, setIsSubmitted] = useState(false);
 
   const stepsList = [
     "Leistung",
     "Fahrzeug",
+    "Standort",
     "Datum & Zeit",
     "Kontaktdaten",
     "Bestätigung"
   ];
 
   const handleNext = () => {
-    if (step < 5) setStep(step + 1);
+    if (step < 6) setStep(step + 1);
   };
 
   const handleBack = () => {
@@ -78,7 +80,7 @@ const ContactInline = () => {
                 <div className="relative mb-6">
                   <div className="overflow-hidden h-1.5 text-xs flex rounded bg-white/10">
                     <div
-                      style={{ width: `${(step / 5) * 100}%` }}
+                      style={{ width: `${(step / 6) * 100}%` }}
                       className="shadow-none flex flex-col text-center whitespace-nowrap text-white justify-center bg-[#007AFF] transition-all duration-300"
                     />
                   </div>
