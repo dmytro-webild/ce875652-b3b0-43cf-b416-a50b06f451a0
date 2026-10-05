@@ -28,7 +28,7 @@ const items = [
     description: "Das ultimative Paket: Perfekt abgestimmte Innen- und Außenaufbereitung auf meisterhaftem Niveau.",
     buttonIcon: "ArrowRight",
     buttonHref: "#contact",
-    imageSrc: "https://picsum.photos/seed/441273510/1200/800"
+    imageSrc: "https://storage.googleapis.com/webild/users/user_3JmMNFbajJzdaQaLpSwfgd9i6cl/tmp/ultra-realistic-premium-black-luxury-car-1791227569846-895f509e.png"
   },
   {
     title: "Felgen & Reifen",
