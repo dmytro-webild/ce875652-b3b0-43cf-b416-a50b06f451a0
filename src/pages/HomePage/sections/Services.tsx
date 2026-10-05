@@ -35,7 +35,7 @@ const items = [
     description: "Intensive Spezialreinigung, Entfernung von Bremsstaub und langanhaltende Versiegelung.",
     buttonIcon: "ArrowRight",
     buttonHref: "#contact",
-    imageSrc: "https://picsum.photos/seed/2041191909/1200/800"
+    imageSrc: "https://storage.googleapis.com/webild/users/user_3JmMNFbajJzdaQaLpSwfgd9i6cl/tmp/ultra-realistic-close-up-of-a-premium-bl-1791227363156-954c3cef.png"
   }
 ];
 
