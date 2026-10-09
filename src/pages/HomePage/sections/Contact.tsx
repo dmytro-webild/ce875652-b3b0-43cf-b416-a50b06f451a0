@@ -27,7 +27,8 @@ const ContactInline = () => {
   const [vehicleModel, setVehicleModel] = useState("");
   const [selectedDate, setSelectedDate] = useState("");
   const [selectedTime, setSelectedTime] = useState(TIME_SLOTS[0]);
-  const [location, setLocation] = useState({ strasse: "", plz: "", ort: "" });
+  const [location, setLocation] = useState({ strasse: "", plz: "", ort: "", zusatz: "", accessible: false });
+  const [validationError, setValidationError] = useState("");
   const [formData, setFormData] = useState({ name: "", email: "", phone: "", notes: "" });
   const [isSubmitted, setIsSubmitted] = useState(false);
 
@@ -41,6 +42,17 @@ const ContactInline = () => {
   ];
 
   const handleNext = () => {
+    setValidationError("");
+    if (step === 3) {
+      if (!location.strasse.trim() || !location.plz.trim() || !location.ort.trim()) {
+        setValidationError("Bitte füllen Sie Strasse und Hausnummer, PLZ sowie Ort aus.");
+        return;
+      }
+      if (!location.accessible) {
+        setValidationError("Bitte bestätigen Sie, dass das Fahrzeug am Standort zugänglich ist.");
+        return;
+      }
+    }
     if (step < 6) setStep(step + 1);
   };
 
