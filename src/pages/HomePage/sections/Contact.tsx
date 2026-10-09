@@ -45,7 +45,7 @@ const ContactInline = () => {
     setValidationError("");
     if (step === 3) {
       if (!location.strasse.trim() || !location.plz.trim() || !location.ort.trim()) {
-        setValidationError("Bitte füllen Sie Strasse und Hausnummer, PLZ sowie Ort aus.");
+        setValidationError("Bitte füllen Sie Strasse, PLZ und Ort aus.");
         return;
       }
     }
