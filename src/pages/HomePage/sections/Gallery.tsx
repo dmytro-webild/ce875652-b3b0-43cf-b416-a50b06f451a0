@@ -2,26 +2,25 @@
 // file as the canonical source for the "gallery" section.
 
 import React from 'react';
-import SectionErrorBoundary from "@/components/ui/SectionErrorBoundary";
 
 export default function GallerySection(): React.JSX.Element {
   return (
-    <section id="warum-nivwerk" data-section="gallery" className="py-20 md:py-28 bg-[#0a0a0a] text-foreground">
+    <section id="warum-nivwerk" data-section="gallery" className="bg-[#0a0a0a] text-foreground">
   <div className="w-content-width mx-auto">
-    <div className="flex flex-col items-center mb-12 md:mb-16 text-center">
+    <div className="flex flex-col items-center text-center">
       <div className="px-3.5 py-1 mb-3 text-xs font-medium uppercase tracking-wider text-[#007AFF] bg-[#007AFF]/10 border border-[#007AFF]/20 rounded-full">
         Vorteile
       </div>
       <h2 className="text-3xl md:text-5xl font-bold tracking-tight text-white mb-4">
         Warum NIVWERK?
       </h2>
-      <p className="text-white/60 max-w-xl text-sm md:text-base">
+      <p className="text-white/60 max-w-content-width text-sm md:text-base">
         Höchste Qualitätsstandards und maximaler Komfort für Ihre Fahrzeugpflege.
       </p>
     </div>
 
-    <div className="grid grid-cols-1 md:grid-cols-3 gap-6 md:gap-8 mb-12">
-      <div className="card bg-[#121212] border border-white/10 rounded-2xl p-6 md:p-8 flex flex-col items-start transition-all hover:border-[#007AFF]/50 group">
+    <div className="grid grid-cols-1 md:grid-cols-3 gap-6 md:gap-8">
+      <div className="card bg-[#121212] border border-white/10 rounded-theme p-6 md:p-8 flex flex-col items-start transition-all hover:border-[#007AFF]/50 group">
         <div className="w-12 h-12 rounded-xl bg-[#007AFF]/10 border border-[#007AFF]/20 flex items-center justify-center text-[#007AFF] mb-6 group-hover:scale-110 transition-transform">
           <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
             <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M8 17a2 2 0 100 4 2 2 0 000-4zm10 0a2 2 0 100 4 2 2 0 000-4zM3 9h12l3 5v3H3V9zm12 0V5H8" />
@@ -35,7 +34,7 @@ export default function GallerySection(): React.JSX.Element {
         </p>
       </div>
 
-      <div className="card bg-[#121212] border border-white/10 rounded-2xl p-6 md:p-8 flex flex-col items-start transition-all hover:border-[#007AFF]/50 group">
+      <div className="card bg-[#121212] border border-white/10 rounded-theme p-6 md:p-8 flex flex-col items-start transition-all hover:border-[#007AFF]/50 group">
         <div className="w-12 h-12 rounded-xl bg-[#007AFF]/10 border border-[#007AFF]/20 flex items-center justify-center text-[#007AFF] mb-6 group-hover:scale-110 transition-transform">
           <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
             <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 3v4M3 5h4M6 17v4m-2-2h4m5-16l2.286 6.857L21 12l-5.714 2.143L13 21l-2.286-6.857L5 12l5.714-2.143L13 3z" />
@@ -49,7 +48,7 @@ export default function GallerySection(): React.JSX.Element {
         </p>
       </div>
 
-      <div className="card bg-[#121212] border border-white/10 rounded-2xl p-6 md:p-8 flex flex-col items-start transition-all hover:border-[#007AFF]/50 group">
+      <div className="card bg-[#121212] border border-white/10 rounded-theme p-6 md:p-8 flex flex-col items-start transition-all hover:border-[#007AFF]/50 group">
         <div className="w-12 h-12 rounded-xl bg-[#007AFF]/10 border border-[#007AFF]/20 flex items-center justify-center text-[#007AFF] mb-6 group-hover:scale-110 transition-transform">
           <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
             <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z" />
