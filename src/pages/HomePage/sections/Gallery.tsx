@@ -2,57 +2,76 @@
 // file as the canonical source for the "gallery" section.
 
 import React from 'react';
-import FeaturesImageBento from '@/components/sections/features/FeaturesImageBento';
-import SectionErrorBoundary from "@/components/ui/SectionErrorBoundary";
 
 export default function GallerySection(): React.JSX.Element {
   return (
-    <div id="gallery" data-section="gallery">
-        <SectionErrorBoundary name="gallery">
-              <FeaturesImageBento
-          tag="Galerie"
-          title="Unsere Arbeiten"
-          description="Ein Einblick in die vollendete Ästhetik unserer Fahrzeug-Detailings."
-          items={[
-            {
-              title: "Finish",
-              description: "Perfektes Finish",
-              imageSrc: "http://img.b2bpic.net/free-photo/superhero-car-vintage-style_23-2151636241.jpg",
-            },
-            {
-              title: "Interieur",
-              description: "Details pur",
-              imageSrc: "http://img.b2bpic.net/free-photo/modern-empty-room_23-2150528571.jpg",
-            },
-            {
-              title: "Felgen",
-              description: "Sauberkeit",
-              imageSrc: "http://img.b2bpic.net/free-photo/vinyl-record-with-retro-texture-assortment_23-2149075965.jpg",
-            },
-            {
-              title: "Front",
-              description: "Design",
-              imageSrc: "http://img.b2bpic.net/free-photo/close-up-metallic-car-design_23-2151113103.jpg",
-            },
-            {
-              title: "Logo",
-              description: "Markenpräzision",
-              imageSrc: "http://img.b2bpic.net/free-photo/headlight-lamp_74190-5517.jpg",
-            },
-            {
-              title: "Studio",
-              description: "Arbeitsumfeld",
-              imageSrc: "http://img.b2bpic.net/free-photo/breathtaking-view-lightened-tunnel-road_181624-17780.jpg",
-            },
-            {
-              title: "Supercar",
-              description: "Resultat",
-              imageSrc: "http://img.b2bpic.net/free-photo/closeup-shot-door-handle-modern-red-car_181624-12744.jpg",
-            },
-          ]}
-          textAnimation="slide-up"
-        />
-        </SectionErrorBoundary>
+    <section id="warum-nivwerk" data-section="gallery" className="bg-[#0a0a0a] text-foreground">
+  <div className="w-content-width mx-auto">
+    <div className="flex flex-col items-center text-center">
+      <div className="px-3.5 py-1 mb-3 text-xs font-medium uppercase tracking-wider text-[#007AFF] bg-[#007AFF]/10 border border-[#007AFF]/20 rounded-full">
+        Vorteile
       </div>
+      <h2 className="text-3xl md:text-5xl font-bold tracking-tight text-white mb-4">
+        Warum NIVWERK?
+      </h2>
+      <p className="text-white/60 max-w-content-width text-sm md:text-base">
+        Höchste Qualitätsstandards und maximaler Komfort für Ihre Fahrzeugpflege.
+      </p>
+    </div>
+
+    <div className="grid grid-cols-1 md:grid-cols-3 gap-6 md:gap-8">
+      <div className="card bg-[#121212] border border-white/10 rounded-theme p-6 md:p-8 flex flex-col items-start transition-all hover:border-[#007AFF]/50 group">
+        <div className="w-12 h-12 rounded-xl bg-[#007AFF]/10 border border-[#007AFF]/20 flex items-center justify-center text-[#007AFF] mb-6 group-hover:scale-110 transition-transform">
+          <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M8 17a2 2 0 100 4 2 2 0 000-4zm10 0a2 2 0 100 4 2 2 0 000-4zM3 9h12l3 5v3H3V9zm12 0V5H8" />
+          </svg>
+        </div>
+        <h3 className="text-xl font-semibold text-white mb-3">
+          1. Mobiler Service
+        </h3>
+        <p className="text-white/60 text-sm md:text-base leading-relaxed">
+          Professionelle Fahrzeugpflege direkt bei Ihnen.
+        </p>
+      </div>
+
+      <div className="card bg-[#121212] border border-white/10 rounded-theme p-6 md:p-8 flex flex-col items-start transition-all hover:border-[#007AFF]/50 group">
+        <div className="w-12 h-12 rounded-xl bg-[#007AFF]/10 border border-[#007AFF]/20 flex items-center justify-center text-[#007AFF] mb-6 group-hover:scale-110 transition-transform">
+          <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 3v4M3 5h4M6 17v4m-2-2h4m5-16l2.286 6.857L21 12l-5.714 2.143L13 21l-2.286-6.857L5 12l5.714-2.143L13 3z" />
+          </svg>
+        </div>
+        <h3 className="text-xl font-semibold text-white mb-3">
+          2. Liebe zum Detail
+        </h3>
+        <p className="text-white/60 text-sm md:text-base leading-relaxed">
+          Sorgfältige Reinigung für ein gepflegtes Fahrzeug.
+        </p>
+      </div>
+
+      <div className="card bg-[#121212] border border-white/10 rounded-theme p-6 md:p-8 flex flex-col items-start transition-all hover:border-[#007AFF]/50 group">
+        <div className="w-12 h-12 rounded-xl bg-[#007AFF]/10 border border-[#007AFF]/20 flex items-center justify-center text-[#007AFF] mb-6 group-hover:scale-110 transition-transform">
+          <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z" />
+          </svg>
+        </div>
+        <h3 className="text-xl font-semibold text-white mb-3">
+          3. Einfach buchen
+        </h3>
+        <p className="text-white/60 text-sm md:text-base leading-relaxed">
+          Wählen Sie Ihren Service und fragen Sie bequem Ihren Wunschtermin an.
+        </p>
+      </div>
+    </div>
+
+    <div className="flex justify-center">
+      <a
+        href="#contact"
+        className="primary-button inline-flex items-center justify-center px-8 py-4 text-base font-semibold rounded-full shadow-lg"
+      >
+        Jetzt Termin anfragen
+      </a>
+    </div>
+  </div>
+</section>
   );
 }
