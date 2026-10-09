@@ -48,10 +48,6 @@ const ContactInline = () => {
         setValidationError("Bitte füllen Sie Strasse und Hausnummer, PLZ sowie Ort aus.");
         return;
       }
-      if (!location.accessible) {
-        setValidationError("Bitte bestätigen Sie, dass das Fahrzeug am Standort zugänglich ist.");
-        return;
-      }
     }
     if (step < 6) setStep(step + 1);
   };
