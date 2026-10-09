@@ -49,6 +49,18 @@ const ContactInline = () => {
         return;
       }
     }
+    if (step === 4) {
+      if (!selectedDate) {
+        setValidationError("Bitte wählen Sie ein Wunschdatum aus.");
+        return;
+      }
+    }
+    if (step === 5) {
+      if (!formData.name.trim() || !formData.email.trim() || !formData.phone.trim()) {
+        setValidationError("Bitte füllen Sie Name, E-Mail und Telefonnummer aus.");
+        return;
+      }
+    }
     if (step < 6) setStep(step + 1);
   };
 
